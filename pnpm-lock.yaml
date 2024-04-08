@@ -11,6 +11,9 @@ devDependencies:
   '@types/google-apps-script':
     specifier: ^1.0.83
     version: 1.0.83
+  '@types/node':
+    specifier: ^20.12.5
+    version: 20.12.5
   clasp:
     specifier: ^1.0.0
     version: 1.0.0

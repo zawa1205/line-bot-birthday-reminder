@@ -1,4 +1,4 @@
-import { sample } from "./sample";
+import { lineBotBirthDayReminder } from "./lineBotBirthDayReminder";
 
 // GASから参照したい変数はglobalオブジェクトに渡してあげる必要がある
-(global as any).sample = sample;
+(global as any).lineBotBirthDayReminder = lineBotBirthDayReminder;

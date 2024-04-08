@@ -8,6 +8,10 @@ esbuild
     minify: true,
     outfile: "./dist/main.js",
     plugins: [GasPlugin],
+    charset: "utf8",
+    define: {
+      "process.env.SPREAD_SHEET_ID": `"${process.env.SPREAD_SHEET_ID}"`,
+    },
   })
   .catch((e) => {
     console.error(e);

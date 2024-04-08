@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  date-fns:
+    specifier: ^3.6.0
+    version: 3.6.0
+  date-fns-tz:
+    specifier: ^3.0.0
+    version: 3.0.0(date-fns@3.6.0)
+
 devDependencies:
   '@google/clasp':
     specifier: ^2.4.2
@@ -891,6 +899,19 @@ packages:
       array-find-index: 1.0.2
     dev: true
 
+  /date-fns-tz@3.0.0(date-fns@3.6.0):
+    resolution: {integrity: sha512-YgRowJwvCAAjN1A5F2l1ZjnYKThX7YDq399qo+ThXFpeOqinN1u8SUqfM5IdRQSpai18Iy3EBMb6/CXTSnDstg==}
+    peerDependencies:
+      date-fns: ^3.0.0
+    dependencies:
+      date-fns: 3.6.0
+      lodash.clonedeep: 4.5.0
+    dev: false
+
+  /date-fns@3.6.0:
+    resolution: {integrity: sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==}
+    dev: false
+
   /debounce@1.2.1:
     resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
     dev: true
@@ -1637,6 +1658,10 @@ packages:
     dependencies:
       p-locate: 6.0.0
     dev: true
+
+  /lodash.clonedeep@4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}

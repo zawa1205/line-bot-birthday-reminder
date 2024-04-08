@@ -1,0 +1,24 @@
+{
+  "name": "line-bot-birthday-reminder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.js",
+    "login": "clasp login",
+    "push": "clasp push",
+    "open": "clasp open",
+    "deploy": "pnpm build && pnpm run push"
+  },
+  "author": "zawa1205",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.83",
+    "clasp": "^1.0.0",
+    "esbuild": "^0.20.2",
+    "esbuild-gas-plugin": "^0.8.0",
+    "typescript": "^5.4.4"
+  }
+}

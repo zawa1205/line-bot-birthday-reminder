@@ -11,6 +11,8 @@ esbuild
     charset: "utf8",
     define: {
       "process.env.SPREAD_SHEET_ID": `"${process.env.SPREAD_SHEET_ID}"`,
+      "process.env.LINE_BOT_SECRETS": `"${process.env.LINE_BOT_SECRETS}"`,
+      "process.env.LINE_BOT_CHANNEL_TOKEN": `"${process.env.LINE_BOT_CHANNEL_TOKEN}"`,
     },
   })
   .catch((e) => {
